@@ -24,13 +24,13 @@ app.use((req, res, next) => {
 });
 
 /* Maintenance page Middleware*/
-app.use((req, res, next) => {
-	res.render('maintenance.hbs', {
-		pageTitle: 'Maintenance',
-		welcomeMessage: 'Page is currently under construction.'
-	});
+// app.use((req, res, next) => {
+// 	res.render('maintenance.hbs', {
+// 		pageTitle: 'Maintenance',
+// 		welcomeMessage: 'Page is currently under construction.'
+// 	});
 	
-});
+// });
 
 /* Register middleware*/
 app.use(express.static(__dirname + '/public')); // Directory to public using __dirname for absolute path
