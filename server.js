@@ -58,6 +58,12 @@ app.get('/about', (req, res) => {
 	});
 });
 
+app.get('/projects', (req, res) => {
+	res.render('projects.hbs', {
+		pageTitle: 'Portfolio'
+	});
+});
+
 app.get('/error', (req, res) => {
 	res.send({
 		error: "Unable to resolve request."
